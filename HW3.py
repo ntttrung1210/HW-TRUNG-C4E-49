@@ -17,6 +17,25 @@ for cl in ['Red','Blue','Brown','Yellow','grey']:
     if i==7:
         break   
 ntt.mainloop()
+#2
+import turtle
+ntt=turtle.Screen()
+tt=turtle.Turtle()
+cl=['Red','Blue','Brown','Yellow','grey']
+for i in range(5):
+        tt.color(cl[i],cl[i])
+        tt.begin_fill()
+        tt.forward(50)
+        tt.left(90)
+        tt.forward(100)
+        tt.left(90)
+        tt.forward(50)
+        tt.left(90)
+        tt.forward(100)
+        tt.left(90)
+        tt.forward(50)
+        tt.end_fill()
+ntt.mainloop()
 #CRUD exercise
 k='Y'
 shop=['T-Shirt','Sweater']
