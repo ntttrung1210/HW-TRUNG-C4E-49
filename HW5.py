@@ -1,24 +1,24 @@
 #streamlit tim nghiem phuong trinh bac 2
-# import streamlit as st
-# st.title("Test")
-# a=int(st.text_input("nhap he so a: "))
-# b=int(st.text_input("Nhap he so b: "))
-# c=int(st.text_input("Nhap he so c: "))
-# if st.button("Tim nghiem"):
-#     if a==0:
-#         if b==0:
-#             st.write("Vo nghiem")
-#         else:
-#             st.write(-c/b)
-#     else:
-#         dlta=b*b-4*a*c
-#         if dlta<0:
-#             st.write("Vo nghiem")
-#         elif dlta==0:
-#             st.write("x= ",-b/(2*a))
-#         else:
-#             st.write("x1=",(-b+dlta**0.5)/(2*a))
-#             st.write("x2=",(-b-dlta**0.5)/(2*a))
+import streamlit as st
+st.title("Test")
+a=int(st.text_input("nhap he so a: "))
+b=int(st.text_input("Nhap he so b: "))
+c=int(st.text_input("Nhap he so c: "))
+if st.button("Tim nghiem"):
+    if a==0:
+        if b==0:
+            st.write("Vo nghiem")
+        else:
+            st.write(-c/b)
+    else:
+        dlta=b*b-4*a*c
+        if dlta<0:
+            st.write("Vo nghiem")
+        elif dlta==0:
+            st.write("x= ",-b/(2*a))
+        else:
+            st.write("x1=",(-b+dlta**0.5)/(2*a))
+            st.write("x2=",(-b-dlta**0.5)/(2*a))
 #Ly thuyet
 '''
     -In Python, a function is a named sequence of statements that belong together. Their primary
@@ -57,13 +57,13 @@ def draw_square(do_dai,mau):
         forward(do_dai)
         left(90)
 #4
-# for i in range(30):
-#     draw_square(i * 5, 'red')
-#     left(17)
-#     penup()
-#     forward(i * 2)
-#     pendown()
-# mainloop()
+for i in range(30):
+    draw_square(i * 5, 'red')
+    left(17)
+    penup()
+    forward(i * 2)
+    pendown()
+mainloop()
 #5
 from turtle import*
 def draw_star(x,y,z):
@@ -72,15 +72,15 @@ def draw_star(x,y,z):
         forward(z)
         right(144)
 #6
-# speed(0)
-# color('blue')
-# for i in range(100):
-#     import random
-#     x = random.randint(-300, 300)
-#     y = random.randint(-300, 300)
-#     length = random.randint(3, 10)
-#     draw_star(x, y, length)
-# mainloop()
+speed(0)
+color('blue')
+for i in range(100):
+    import random
+    x = random.randint(-300, 300)
+    y = random.randint(-300, 300)
+    length = random.randint(3, 10)
+    draw_star(x, y, length)
+mainloop()
 #7
 def remove_dollar_sign(s):
     ns=''
@@ -89,11 +89,11 @@ def remove_dollar_sign(s):
             ns=ns+s[i]
     return ns
 #8
-# string_with_no_dollars = remove_dollar_sign("$80% percent of $life is to show $up")
-# if string_with_no_dollars == "80% percent of life is to show up":
-#     print("Your function is correct")
-# else:
-#     print("Oops, there's a bug")
+string_with_no_dollars = remove_dollar_sign("$80% percent of $life is to show $up")
+if string_with_no_dollars == "80% percent of life is to show up":
+    print("Your function is correct")
+else:
+    print("Oops, there's a bug")
 #9
 def get_even_list(l):
     nl=[]
@@ -102,11 +102,11 @@ def get_even_list(l):
             nl.append(l[i])
     return nl
 #10
-# even_list = get_even_list([1, 2, 5, 9, -10, 6])
-# if set(even_list) == set([2, -10, 6]):
-#     print("Your function is correct")
-# else:
-#     print("Ooops, bugs detected")
+even_list = get_even_list([1, 2, 5, 9, -10, 6])
+if set(even_list) == set([2, -10, 6]):
+    print("Your function is correct")
+else:
+    print("Ooops, bugs detected")
 #11
 def is_inside(l1,l2):
     if l1[0]>=l2[0] and l1[0]<=l2[0]+l2[2] and l1[1]>=l2[1] and l1[1]<=l2[1]+l2[3]:
@@ -117,7 +117,7 @@ print(is_inside([100,120],[140,60,40,50]))
 #12
 '''
 Both dictionary and list
-
+'''
 
 
 
