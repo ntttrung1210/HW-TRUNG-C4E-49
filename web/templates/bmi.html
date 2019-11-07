@@ -1,0 +1,16 @@
+<html>
+    <body>
+        {% if data < 16 %}
+           Severely underweight
+        {% elif data < 18.5 %}
+           Underweight  
+        {% elif data < 25 %}
+           Normal 
+        {% elif data < 30 %}
+           Overweight  
+        {% else %}
+           Obese
+        {% endif %}
+    
+</body>
+</html>
