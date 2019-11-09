@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <table border="1">
+                {% for i in range(a) %}
+                    <tr>
+                        {% for j in range(b) %}
+                             <td>{{data[i][j]}}</td> 
+                        {% endfor %}  
+                    </tr>          
+                {% endfor %}   
+        </table>
+    </body>
+</html>

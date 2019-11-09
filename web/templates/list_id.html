@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <h1>DANH SÁCH MÃ CHỨNG KHOÁN</h1>
+        <table border="1">
+            {% for i in range(a) %}
+                <tr>
+                    <td>{{i+1}}</td>
+                    <td>{{data[i]}}</td>
+                </tr>
+            {% endfor %}  
+        </table>
+    </body>
+</html>
